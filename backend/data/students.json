@@ -1,0 +1,34 @@
+[
+    {
+        "enrollment": "A001",
+        "name": "Aarav Sharma",
+        "email": "aarav@example.com",
+        "course": "B.Tech CSE",
+        "gender": "Male",
+        "marks": 88
+    },
+    {
+        "enrollment": "A002",
+        "name": "Diya Patel",
+        "email": "diya@example.com",
+        "course": "BCA",
+        "gender": "Female",
+        "marks": 92
+    },
+    {
+        "enrollment": "A003",
+        "name": "Rohan Gupta",
+        "email": "rohan@example.com",
+        "course": "MCA",
+        "gender": "Male",
+        "marks": 75
+    },
+    {
+        "enrollment": "A004",
+        "name": "Sara Khan",
+        "email": "sara@example.com",
+        "course": "B.Sc IT",
+        "gender": "Female",
+        "marks": 81
+    }
+]

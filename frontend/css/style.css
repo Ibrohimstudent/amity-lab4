@@ -1,0 +1,124 @@
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f2f5f9;
+color: #222;
+}
+/* ===== Header ===== */
+header {
+background: #003366; /* Amity blue */
+color: #fff;
+border-bottom: 5px solid #f9b500; /* Amity yellow */
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 15px 25px;
+}
+.logo {
+height: 65px;
+background: #fff;
+padding: 5px;
+border-radius: 6px;
+}
+.brand h1 { margin: 0; font-size: 26px; }
+.brand p { margin: 3px 0 0; color: #f9b500; }
+/* ===== Navigation ===== */
+nav {
+display: flex;
+background: #002244;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+padding: 12px 22px;
+transition: background 0.2s;
+}
+nav a:hover { background: #004c99; }
+nav a.active { background: #f9b500; color: #003366; font-weight: bold; }
+
+main { max-width: 950px; margin: 25px auto; padding: 0 16px; }
+.card {
+background: #fff;
+padding: 25px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+h2 { color: #003366; margin-top: 0; }
+.note { color: #666; font-size: 14px; }
+/* ===== Frame ===== */
+.frame {
+width: 100%;
+height: 260px;
+border: 3px solid #003366;
+border-radius: 6px;
+}
+/* ===== Form ===== */
+form label { display: block; margin-top: 14px; font-weight: 600; }
+form input[type=text],
+form input[type=email],
+form select,
+form textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #bbb;
+border-radius: 5px;
+font-size: 15px;
+}
+form input:focus, form select:focus, form textarea:focus {
+outline: none;
+border-color: #003366;
+}
+.radio label { display: inline-block; font-weight: normal; margin-right: 15px; }
+.btn {
+display: inline-block;
+margin-top: 18px;
+padding: 10px 24px;
+background: #003366;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+font-size: 15px;
+}
+.btn:hover { background: #f9b500; color: #003366; }
+.btn-grey { background: #888; }
+.error { background: #fde2e2; color: #a00; padding: 10px 15px; border-radius: 5px; }
+.success { background: #e3f7e3; color: #155d15; padding: 15px; border-radius: 5px; }
+.error p { margin: 4px 0; }
+/* ===== Table ===== */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+caption { font-weight: bold; padding: 10px; color: #003366; }
+th, td { padding: 10px 12px; border: 1px solid #ccc; text-align: left; }
+thead th { background: #003366; color: #fff; }
+tbody tr:nth-child(even) { background: #f4f7fb; }
+tbody tr:hover { background: #fff3cc; }
+tfoot td { background: #f9b500; font-weight: bold; color: #003366; }
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+padding: 15px;
+background: #003366;
+color: #fff;
+margin-top: 30px;
+}
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+nav { flex-direction: column; }
+.brand h1 { font-size: 20px; }
+}
+/* ===== Extras for frontend/backend version ===== */
+form input[type=number] {
+width: 100%; padding: 10px; margin-top: 5px;
+border: 1px solid #bbb; border-radius: 5px; font-size: 15px;
+}
+#msg { margin-bottom: 10px; }
+.structure { line-height: 1.8; }
+.ok { color: #155d15; font-weight: bold; }
+.bad { color: #a00; font-weight: bold; }
